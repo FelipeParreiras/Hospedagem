@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #111111);
+  background-size: 300% 300%;
+  animation: gradientFlow 12s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
